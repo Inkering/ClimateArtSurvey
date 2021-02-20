@@ -35,6 +35,7 @@ export default {
 
 <style>
 @import url('https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911|Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon&display=swap');
 @import '../styles/theme.css';
 

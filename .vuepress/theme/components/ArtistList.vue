@@ -58,11 +58,12 @@ export default {
 .artistImg {
 		/* padding-top: 10px; */
 		width: 100%;
-		padding-right: 10px;
+		padding-right: 2rem;
 }
 .artistName {
-		font-size: 5rem;
+		font-size: 4rem;
 		line-height: 5rem;
+		font-weight:400;
 }
 .projectExcerpt {
 		width: 100%;

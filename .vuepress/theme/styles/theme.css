@@ -5,7 +5,7 @@
 
 /* Type */
 h1,h2,h3,h4,h5 {
-		font-family: 'Goudy Bookletter 1911', serif;
+		font-family: 'Libre Baskerville', serif;
 }
 div, p {
 		font-family: 'Lato', sans-serif;
@@ -40,6 +40,7 @@ hr {
 }
 #about {
 		font-size: 4rem;
+		font-weight: 400;
 }
 .elements h1 {
 		margin-left: 1.3rem;
@@ -64,9 +65,12 @@ h2:first-of-type {
 }
 /* Main Section */
 .main {
-		margin-left: 4rem;
-		margin-right: 4rem;
+		/* margin-left: 4rem;
+		margin-right: 4rem; */
 		max-width: 80rem;
+		margin: 0rem auto;
+		padding-left: 4rem;
+		padding-right: 4rem;
 }
 .logo {
 		width: 15rem;
