@@ -1,7 +1,7 @@
 <template>
 <div class="artistLists">
 	<div class="artistlist">
-		<div class="artistItem" v-for="post in artists" :key="post.frontmatter.date">
+		<div class="artistItem" v-for="post in artists" :key="post.frontmatter.order">
 			<div>
 				<router-link
 					:to="post.path">
@@ -62,7 +62,7 @@ export default {
 }
 .artistName {
 		font-size: 5rem;
-		line-height: 4rem;
+		line-height: 5rem;
 }
 .projectExcerpt {
 		width: 100%;
