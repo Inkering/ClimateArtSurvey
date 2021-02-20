@@ -1,0 +1,19 @@
+{
+  "name": "ClimateArtSurvey",
+  "version": "0.0.1",
+  "description": "A Survey of Climate Artists",
+  "main": "index.js",
+  "authors": {
+    "name": "Dieter Brehm and Annie Tor",
+    "email": ""
+  },
+  "repository": "inkering/ClimateArtSurvey",
+  "scripts": {
+    "dev": "vuepress dev",
+    "build": "vuepress build"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
