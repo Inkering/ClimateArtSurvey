@@ -60,7 +60,7 @@ export default {
 		transition-duration: 0.5s;
 		transition-delay: 0s;
 }
-.projectImg {
+.artistImg {
 		padding-top: 10px;
 		width: 100%;
 }

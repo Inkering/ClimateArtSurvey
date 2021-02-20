@@ -2,7 +2,7 @@
 title: "Dawn Stetzel"
 layout: PostLayout
 date: 2020-10-16
-img: ""
+img: "/stetzel.jpg"
 ---
 
 Dawn Stetzel

@@ -4,6 +4,7 @@
 			<div class="main">
 					<router-link to="/"><h1 class="article-home">Back</h1></router-link>
 					<article class="h-entry">
+							<img class="artistImg" :src="$page.frontmatter.img" alt="">
 							<h2 class="pageTitle p-name">{{$page.frontmatter.title}}</h2>
 							<Content/>
 					</article>
