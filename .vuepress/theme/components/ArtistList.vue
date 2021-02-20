@@ -2,10 +2,15 @@
 <div class="artistLists">
 	<div class="artistlist">
 		<div class="artistItem" v-for="post in artists" :key="post.frontmatter.date">
-			<router-link
-				:to="post.path">
-				<img class="artistImg" :src="post.frontmatter.img" alt="">
-			</router-link>
+			<div>
+				<router-link
+					:to="post.path">
+					<div>
+						<img class="artistImg" :src="post.frontmatter.img" alt="">
+					</div>
+				</router-link>
+				<p class="caption">{{post.frontmatter.caption}} - <a :href="post.frontmatter.link">link</a></p>
+			</div>
 			<router-link
 				:to="post.path">
 				<div>

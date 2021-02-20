@@ -73,6 +73,11 @@ h2:first-of-type {
 		margin-top: 10px;
 }
 /* post styling */
+.caption {
+	margin-top: 0px;
+	font-size: 1rem;
+	font-style: italic;
+}
 article img {
 		width: 100%;
 		height: 100%;

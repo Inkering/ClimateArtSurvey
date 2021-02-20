@@ -6,7 +6,10 @@
 			<router-link to="/"><p>Back</p></router-link>
 			<hr>
 			<article class="h-entry">
-					<img class="artistImg" :src="$page.frontmatter.img" alt="">
+					<div>
+						<img class="artistImg" :src="$page.frontmatter.img" alt="">
+						<p class="caption">{{$page.frontmatter.caption}} - <a :href="$page.frontmatter.link">link</a></p>
+					</div>
 					<h2 class="pageTitle p-name">{{$page.frontmatter.title}}</h2>
 					<Content/>
 			</article>
