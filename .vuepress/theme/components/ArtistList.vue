@@ -1,22 +1,41 @@
 <template>
 <div class="artistLists">
 	<div class="artistlist">
-		<div class="artistItem" v-for="post in artists" :key="post.frontmatter.order">
-			<div>
+		<div v-for="post in artists" :key="post.frontmatter.order">
+		<div v-if="post.frontmatter.direction === 'left'">
+			<div class="artistItemRev">
+				<div class="artistImgContainerRev">
+					<router-link
+						:to="post.path">
+							<img class="artistImg" :src="post.frontmatter.img" alt="">
+					</router-link>
+					<p class="caption">{{post.frontmatter.caption}} - <a :href="post.frontmatter.link">link</a></p>
+				</div>
 				<router-link
 					:to="post.path">
 					<div>
-						<img class="artistImg" :src="post.frontmatter.img" alt="">
+						<div class="postDisplay"><h2 class="artistName">{{post.title}}</h2></div>
 					</div>
 				</router-link>
-				<p class="caption">{{post.frontmatter.caption}} - <a :href="post.frontmatter.link">link</a></p>
-			</div>
-			<router-link
-				:to="post.path">
-				<div>
-					<div class="postDisplay"><h2 class="artistName">{{post.title}}</h2></div>
+			</div>	
+		</div>
+		<div v-else>
+			<div class="artistItem">
+				<div class="artistImgContainer">
+					<router-link
+						:to="post.path">
+							<img class="artistImg" :src="post.frontmatter.img" alt="">
+					</router-link>
+					<p class="caption">{{post.frontmatter.caption}} - <a :href="post.frontmatter.link">link</a></p>
 				</div>
-			</router-link>
+				<router-link
+					:to="post.path">
+					<div>
+						<div class="postDisplay"><h2 class="artistName">{{post.title}}</h2></div>
+					</div>
+				</router-link>
+			</div>	
+		</div>
 		</div>
 	</div>
 </div>
@@ -48,6 +67,18 @@ export default {
 	/* width: 80%; */
 	display: flex;
 	flex-direction: row;
+	text-align: left;
+}
+.artistItemRev {
+	display: flex;
+	flex-direction: row-reverse;
+	text-align: right;
+}
+.artistImgContainer {
+		padding-right: 2rem;
+}
+.artistImgContainerRev {
+		padding-left: 2rem;
 }
 .active {
 		color:black;
@@ -58,7 +89,6 @@ export default {
 .artistImg {
 		/* padding-top: 10px; */
 		width: 100%;
-		padding-right: 2rem;
 }
 .artistName {
 		font-size: 4rem;
@@ -70,7 +100,7 @@ export default {
 		margin-left: 1.5rem;
 }
 @media all and (min-width: 1200px) {
-	.projectlist {
+	.artistlist {
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: flex-start;
