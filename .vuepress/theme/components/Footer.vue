@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <div>©2021 Dieter Brehm and Annie Tor. All rights reserved.</div>
+    <div>Made by Annie Tor and Dieter Brehm</div>
 	</footer>
 </template>
 

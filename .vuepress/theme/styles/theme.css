@@ -27,6 +27,9 @@ div, p {
 hr {
 	border: 0.5px solid black;
 }
+.aboutText {
+	max-width: 45rem;
+}
 .title{
 		font-size: 10rem;
 }

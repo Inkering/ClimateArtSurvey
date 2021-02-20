@@ -3,12 +3,15 @@
 	<Nav/>
 	<div class="main">
 		<h1 id="about">Survey of Climate Artists</h1>
+		<hr>
 		<div class="aboutText">
-			<hr>
+		<div class="aboutContent">
 			<Content/>
-			<hr>
 		</div>
+		</div>
+		<hr>
 		<ArtistList/>
+		<hr>
 		<Footer/>
 	</div>
 </div>
