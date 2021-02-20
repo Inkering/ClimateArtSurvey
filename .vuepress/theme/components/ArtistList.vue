@@ -99,22 +99,22 @@ export default {
 		width: 100%;
 		margin-left: 1.5rem;
 }
-@media all and (min-width: 1200px) {
-	.artistlist {
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: flex-start;
-		/* align-items: baseline; */
-		width: 70rem;
+@media all and (max-width: 480px) {
+	.artistItem {
+		display: flex;
+		flex-direction: column;
+		text-align: left;
 	}
-	.projectImg {
-		width: 30rem;
+	.artistItemRev {
+		display: flex;
+		flex-direction: column;
+		text-align: left;
 	}
-	.projectExcerpt {
-		width: 30rem;
+	.artistImgContainer {
+		padding-right: 0;
 	}
-	.projectItem {
-		width: 35rem;
+	.artistImgContainerRev {
+		padding-left: 0;
 	}
 }
 </style>

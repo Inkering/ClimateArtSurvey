@@ -161,7 +161,7 @@ blockquote p {
 }
 @media all and (max-width: 480px) {
     a, p {
-        font-size: 1.1rem;
+        font-size: 0.8rem;
         line-height: 1.8rem;
     }
 
@@ -172,27 +172,29 @@ blockquote p {
 
     .nav {
 				display: none;
-		}
-		.main {
-				margin-left: 1rem;
-		}
-		.mobile-icons {
-				margin-right: 1rem;
-				display: flex;
-				flex-direction: row;
-				flex-wrap: wrap;
-				justify-content: center;
-				align-items: center;
-		}
-		.icon {
-				padding: 0 1.1rem 0 1.1rem;
-		}
-		.mobile-home {
-				display: inline;
-		}
-		.blogList, .projectlist {
-				padding-left: 0px;
-		}
+	}
+	.main {
+		margin: 0rem auto;
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+	.mobile-icons {
+			margin-right: 1rem;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+	}
+	.icon {
+			padding: 0 1.1rem 0 1.1rem;
+	}
+	.mobile-home {
+			display: inline;
+	}
+	.blogList, .projectlist {
+			padding-left: 0px;
+	}
 }
 @media all and (max-height: 800px) {
 		.nav {
