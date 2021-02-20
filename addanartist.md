@@ -4,6 +4,7 @@ layout: PostLayout
 date: 2021-2-20
 ---
 
+## Adding Artists
 We can add new artists to the survey by creating new markdown files:
 
 1. Make a file for each artist in the `artists` folder.
@@ -22,3 +23,11 @@ We can add new artists to the survey by creating new markdown files:
     ---
     ```
 4. Type anything in the markdown file, woo!
+
+## Previewing
+
+Run `yarn install`, then `yarn run dev`.
+
+## Publishing
+
+Any commits added to the repo will go live!
