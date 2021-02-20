@@ -24,8 +24,8 @@ div, p {
 		margin-top: 10px;
 		margin-left: 4rem;
 }
-.splash {
-		/* text-align:center; */
+hr {
+	border: 0.5px solid black;
 }
 .title{
 		font-size: 10rem;
@@ -65,7 +65,8 @@ h2:first-of-type {
 /* Main Section */
 .main {
 		margin-left: 4rem;
-		max-width: 40rem;
+		margin-right: 4rem;
+		max-width: 80rem;
 }
 .logo {
 		width: 15rem;
@@ -86,11 +87,11 @@ article img {
 }
 a {
 	text-decoration: none;
-	color: #005b78;
+	color: #44964C;
 }
 
 a:hover {
-	color: #003d51;
+	color: #35713B;
 }
 table {
 	border-collapse: collapse;

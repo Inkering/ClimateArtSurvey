@@ -2,10 +2,12 @@
 <div>
 	<Nav/>
 	<div class="main">
-		<h1 id="about">Climate Art Survey</h1>
-    <div class="aboutText">
-		<Content/>
-    </div>
+		<h1 id="about">Survey of Climate Artists</h1>
+		<div class="aboutText">
+			<hr>
+			<Content/>
+			<hr>
+		</div>
 		<ArtistList/>
 		<Footer/>
 	</div>

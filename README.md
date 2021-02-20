@@ -1,4 +1,1 @@
-
-# ClimateArtSurvey
-
-hello this is the climate art survey
+As part of the The Intersection of Biology, Art and Technology, a course at Olin College, we've made a survey of notable artists whose practice incorporates or is centered on climate art. Far from exhaustive, but varied in scope, this survey of work celebrates how artists are responding to today's climate crisis.
