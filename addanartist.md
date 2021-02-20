@@ -14,8 +14,11 @@ We can add new artists to the survey by creating new markdown files:
     ---
     title: "First Last"
     layout: PostLayout
-    date: 2021-02-20
-    img: "/image.jpg"
+    date: 2020-10-16
+    order: 3 (what order in the list to present it)
+    img: "/last.jpg"
+    caption: "work title - year - First Last"
+    link: "work link"
     ---
     ```
 4. Type anything in the markdown file, woo!
