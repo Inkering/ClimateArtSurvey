@@ -1,8 +1,8 @@
 <template>
 <div class="artistLists">
 	<div class="artistlist">
-		<div v-for="post in artists" :key="post.frontmatter.order">
-		<div v-if="post.frontmatter.direction === 'left'">
+		<div class="artistContainer" v-for="post in artists" :key="post.frontmatter.order">
+		<!-- <div v-if="post.frontmatter.direction === 'left'">
 			<div class="artistItemRev">
 				<div class="artistImgContainerRev">
 					<router-link
@@ -18,24 +18,22 @@
 					</div>
 				</router-link>
 			</div>	
-		</div>
-		<div v-else>
-			<div class="artistItem">
-				<div class="artistImgContainer">
-					<router-link
-						:to="post.path">
-							<img class="artistImg" :src="post.frontmatter.img" alt="">
-					</router-link>
-					<p class="caption">{{post.frontmatter.caption}} - <a :href="post.frontmatter.link">link</a></p>
-				</div>
+		</div> -->
+		<div class="artistItem">
+			<div class="artistImgContainer">
 				<router-link
 					:to="post.path">
-					<div>
-						<div class="postDisplay"><h2 class="artistName">{{post.title}}</h2></div>
-					</div>
+						<img class="artistImg" :src="post.frontmatter.img" alt="">
 				</router-link>
-			</div>	
-		</div>
+				<p class="caption">{{post.frontmatter.caption}} - <a :href="post.frontmatter.link">link</a></p>
+			</div>
+			<router-link
+				:to="post.path">
+				<div>
+					<div class="postDisplay"><h2 class="artistName">{{post.title}}</h2></div>
+				</div>
+			</router-link>
+		</div>	
 		</div>
 	</div>
 </div>
@@ -63,23 +61,24 @@ export default {
 		clear: left;
 }
 .artistItem {
-	/* padding: 10px; */
-	/* width: 80%; */
 	display: flex;
 	flex-direction: row;
 	text-align: left;
 }
-.artistItemRev {
+.artistContainer:nth-child(odd) > .artistItem {
 	display: flex;
 	flex-direction: row-reverse;
 	text-align: right;
 }
+
+.artistContainer:nth-child(odd) > .artistItem > .artistImgContainer {
+padding-left: 2rem;
+}
+
 .artistImgContainer {
 		padding-right: 2rem;
 }
-.artistImgContainerRev {
-		padding-left: 2rem;
-}
+
 .active {
 		color:black;
 		transition-property: color;
@@ -105,7 +104,7 @@ export default {
 		flex-direction: column;
 		text-align: left;
 	}
-	.artistItemRev {
+	.artistContainer:nth-child(odd) > .artistItem {
 		display: flex;
 		flex-direction: column;
 		text-align: left;
@@ -113,7 +112,7 @@ export default {
 	.artistImgContainer {
 		padding-right: 0;
 	}
-	.artistImgContainerRev {
+	.artistContainer:nth-child(odd) > .artistItem > .artistImgContainer {
 		padding-left: 0;
 	}
 }
