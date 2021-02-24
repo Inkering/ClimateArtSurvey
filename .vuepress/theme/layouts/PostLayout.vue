@@ -3,16 +3,20 @@
 		<Nav/>
 		<div class="main">
 			<h1 id="about">Survey of Climate Artists</h1>
+			<hr>
 			<router-link to="/"><p>Back</p></router-link>
 			<hr>
-			<article class="h-entry">
-					<div>
+			<div class="artist-title">
+					<h2 class="pageTitle p-name">{{$page.frontmatter.title}}</h2>
+					<div class="artistImgContainer">
 						<img class="artistImg" :src="$page.frontmatter.img" alt="">
 						<p class="caption">{{$page.frontmatter.caption}} - <a :href="$page.frontmatter.link">link</a></p>
+						<hr class="cursed-line">
+						<article class="h-entry">
+							<Content/>
+						</article>
 					</div>
-					<h2 class="pageTitle p-name">{{$page.frontmatter.title}}</h2>
-					<Content/>
-			</article>
+				</div>
 		</div>
 		<Footer/>
   </div>
@@ -33,8 +37,46 @@ export default {
 };
 </script>
 
-<style>
+<style scoped> 
 @import url('https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911|Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon&display=swap');
 @import '../styles/theme.css';
+
+article {
+	float: right;
+	max-width: 53rem;
+	text-align: left;
+}
+.pageTitle {
+	padding-bottom: 1rem;
+	padding-right: 2rem;
+}
+.artist-title {
+	display: flex;
+	flex-direction: row;
+	text-align: right;
+}
+.artistImgContainer {
+	max-width: 70rem;
+	padding-left: 5px;
+}
+.artistImg {
+	max-width: 100%;
+}
+.cursed-line {
+	/* margin: 0 auto;
+	position: relative;
+	width: 80rem; */
+}
+@media all and (max-width: 750px) {
+	.artist-title {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	}
+	.artistImgContainer {
+		padding-right: 0;
+		padding-left: 0;
+	}
+}
 </style>

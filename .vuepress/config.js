@@ -19,36 +19,10 @@ module.exports = {
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
   ],
 
-  /**
-   * Theme configuration, here is the default theme configuration for VuePress.
-   *
-   * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
-   */
-  themeConfig: {
-    repo: '',
-    editLinks: false,
-    docsDir: '',
-    editLinkText: '',
-    lastUpdated: false,
-    nav: [
-      {
-        text: 'Guide',
-        link: '/guide/',
-      },
-    ],
-    sidebar: {
-      '/guide/': [
-        {
-          title: 'Guide',
-          collapsable: false,
-          children: [
-            '',
-            'using-vue',
-          ]
-        }
-      ],
-    }
-  },
+  markdown: {
+    extendMarkdown: md => {
+      md.use(require('markdown-it-footnote'))
+  }},
 
   /**
    * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
@@ -56,5 +30,6 @@ module.exports = {
   plugins: [
     '@vuepress/plugin-back-to-top',
     '@vuepress/plugin-medium-zoom',
+    '@markspec/vuepress-plugin-footnote',
   ]
 }

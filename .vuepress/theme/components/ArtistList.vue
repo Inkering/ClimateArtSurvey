@@ -2,23 +2,6 @@
 <div class="artistLists">
 	<div class="artistlist">
 		<div class="artistContainer" v-for="post in artists" :key="post.frontmatter.order">
-		<!-- <div v-if="post.frontmatter.direction === 'left'">
-			<div class="artistItemRev">
-				<div class="artistImgContainerRev">
-					<router-link
-						:to="post.path">
-							<img class="artistImg" :src="post.frontmatter.img" alt="">
-					</router-link>
-					<p class="caption">{{post.frontmatter.caption}} - <a :href="post.frontmatter.link">link</a></p>
-				</div>
-				<router-link
-					:to="post.path">
-					<div>
-						<div class="postDisplay"><h2 class="artistName">{{post.title}}</h2></div>
-					</div>
-				</router-link>
-			</div>	
-		</div> -->
 		<div class="artistItem">
 			<div class="artistImgContainer">
 				<router-link
