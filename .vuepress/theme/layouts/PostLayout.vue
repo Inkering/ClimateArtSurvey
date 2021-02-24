@@ -44,7 +44,6 @@ export default {
 
 article {
 	float: right;
-	max-width: 53rem;
 	text-align: left;
 }
 .pageTitle {
@@ -63,11 +62,7 @@ article {
 .artistImg {
 	max-width: 100%;
 }
-.cursed-line {
-	/* margin: 0 auto;
-	position: relative;
-	width: 80rem; */
-}
+
 @media all and (max-width: 750px) {
 	.artist-title {
 	display: flex;
