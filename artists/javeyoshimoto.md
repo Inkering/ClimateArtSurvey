@@ -4,7 +4,7 @@ layout: PostLayout
 date: 2022-10-16
 order: 3
 direction:
-img: "/yoshimoto.png"
+img: "/yoshimoto.jpg"
 caption: "Numinous Lethologica - 2015 - Jave Yoshimoto"
 link: "https://theweatherstation.bandcamp.com/album/ignorance"
 ---
