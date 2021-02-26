@@ -19,7 +19,7 @@ The frequency at which natural disasters occur is directly linked to human impac
 ![bright gouache painting depicting a flooding sea below the Brooklyn Bridge with the New York City skyline and Godzilla in the background.](/yoshimoto3.jpg)
 *In a New York Minute - 2013 - Jave Yoshimoto - [link](https://www.artworksforchange.org/portfolio/jave-yoshimoto/)*
 
-Editor’s note: Particularly striking to me is Yoshimoto’s painting Numinous Lethologica, a gory depiction of modern whale and dolphin hunting. Behind a foreground of blood and animal carcasses, Godzilla turns away and screams helplessly toward the sky-- a dark giant of hopelessness in direct contrast to the piece’s colorful, psychedelic character. 
+Editor’s note: Particularly striking to me is Yoshimoto’s painting <i>Numinous Lethologica</i>, a gory depiction of modern whale and dolphin hunting. Behind a foreground of blood and animal carcasses, Godzilla turns away and screams helplessly toward the sky— a dark giant of hopelessness in direct contrast to the piece’s colorful, psychedelic character. 
 
 [^1]: <https://www.ncdc.noaa.gov/billions/>
 [^2]: <https://www.nwf.org/-/media/Documents/PDFs/Environmental-Threats/Climate-Change-Natural-Disasters-fact-sheet.ashx>
