@@ -6,8 +6,9 @@
 		<hr>
 		<div class="aboutText">
 		<div class="aboutContent">
-			<Content/>
-		</div>
+		<Content/>
+ <i>Part of the inker-ring webring: &nbsp;&nbsp;</i><span></span> <a title="web ring" href="https://ring.inkering.com/?from=https://climateartsurvey.netlify.app/"><img class="ring" role="none" src="@theme/assets/lines.png" alt="link to webring" /></a>
+    </div>
 		</div>
 		<hr>
 		<ArtistList/>
